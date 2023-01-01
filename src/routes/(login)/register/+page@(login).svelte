@@ -1,3 +1,9 @@
+<script>
+// @ts-nocheck
+	export let data;
+	
+</script>
+
 <div
 	class="relative bg-white px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10"
 >
@@ -8,16 +14,16 @@
 					Register New Account
 				</h2>
 			</div>
-			<form class="mt-8 space-y-6" action="#" method="POST">
+			<form class="mt-8 space-y-6" method="POST" action="?/create">
 				<input type="hidden" name="remember" value="true" />
 				<div class="-space-y-px rounded-md shadow-sm">
 					<div class="py-2">
-						<label for="email-address" class="sr-only">Your First Name</label>
+						<label for="first-name" class="sr-only">Your First Name</label>
 						<input
-							id="email-address"
-							name="email"
-							type="email"
-							autocomplete="email"
+							id="first-name"
+							name="first-name"
+							type="name"
+							autocomplete="first-name"
 							required
 							class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
 							placeholder="First Name"
@@ -25,12 +31,12 @@
 					</div>
 					<div>
 						<div>
-							<label for="email-address" class="sr-only">Your Last Name</label>
+							<label for="last-name" class="sr-only">Your Last Name</label>
 							<input
-								id="email-address"
-								name="email"
-								type="email"
-								autocomplete="email"
+								id="last-name"
+								name="last-name"
+								type="name"
+								autocomplete="last-name"
 								required
 								class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
 								placeholder="Last Name"

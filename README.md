@@ -9,7 +9,7 @@ Movie Dashboard Web App is a web application that allows users to know movies in
 - [x] Create a login page
 - [x] Create a register page
 - [x] Create a movie details page
-- [ ] Implement login and register functionality
+- [x] Implement login and register functionality
 - [ ] Add movie schedule in movie details page
 - [ ] Create a movie search page (_optional_)
 - [ ] Implement movie search functionality (_optional_)
