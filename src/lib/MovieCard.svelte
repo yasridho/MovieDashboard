@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Merchant from "./Merchant.svelte";
+	import Merchant from './Merchant.svelte';
 
 	export let movie: {
 		id: string;
@@ -31,24 +31,24 @@
 	};
 </script>
 
-<li class="shrink-0 snap-center w-40 md:w-60 cursor-pointer group">
+<li class="group w-40 shrink-0 cursor-pointer snap-center md:w-60">
 	<a href={'/' + movie.id}>
 		<div class="relative block pb-10 md:pb-28 ">
 			<img
 				src={movie.poster_path}
 				title={movie.title}
 				alt={movie.title}
-				class="absolute inset-0 object-contain group-hover:grayscale group-hover:brightness-50 rounded-xl transition-all shadow-xl"
+				class="absolute inset-0 rounded-xl object-contain shadow-xl transition-all group-hover:brightness-50 group-hover:grayscale"
 			/>
-			<div class="relative inline p-2 overflow-hidden">
+			<div class="relative inline overflow-hidden p-2">
 				<div class="mt-20 md:mt-32">
 					<div
-						class="h-20 transition-all transform translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0"
+						class="h-20 translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
 					>
-						<p class="font-bold text-center text-white md:text-base">{movie.title}</p>
+						<p class="text-center font-bold text-white md:text-base">{movie.title}</p>
 						<div class="gap-2">
 							{#each movie.genre_ids as genre}
-								<p class="text-xs md:text-sm text-center font-semibold text-white">
+								<p class="text-center text-xs font-semibold text-white md:text-sm">
 									{genre.name}
 								</p>
 							{/each}
@@ -57,12 +57,12 @@
 				</div>
 			</div>
 		</div>
-		<p class="text-md md:text-lg text-gray-800 font-bold text-center">
+		<p class="text-md text-center font-bold text-gray-800 md:text-lg">
 			{movie.title.toUpperCase()}
 		</p>
-		<div class="flex justify-center gap-1 mt-2">
+		<div class="mt-2 flex justify-center gap-1">
 			{#each movie.merchant as merchant}
-				<Merchant merchant={merchant} />
+				<Merchant {merchant} />
 			{/each}
 		</div>
 	</a>

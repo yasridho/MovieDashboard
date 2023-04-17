@@ -198,20 +198,20 @@
 </script>
 
 <!-- Tabs -->
-<div id="theatre-tabs" class="flex justify-start ml-10 gap-2">
-	<button class="all-theatre rounded-3xl outline outline-1 outline-blue-600 mt-2">
-		<p class="text-theatre-all py-1 px-3 text-center text-sm text-blue-600 font-bold">
+<div id="theatre-tabs" class="ml-10 flex justify-start gap-2">
+	<button class="all-theatre mt-2 rounded-3xl outline outline-1 outline-blue-600">
+		<p class="text-theatre-all py-1 px-3 text-center text-sm font-bold text-blue-600">
 			Semua Bioskop
 		</p>
 	</button>
-	<button class="theatre-xxi rounded-3xl outline outline-1 outline-gray-300 mt-2">
-		<p class="text-theatre-xxi py-1 px-3 text-center text-sm text-gray-800 font-bold">XXI</p>
+	<button class="theatre-xxi mt-2 rounded-3xl outline outline-1 outline-gray-300">
+		<p class="text-theatre-xxi py-1 px-3 text-center text-sm font-bold text-gray-800">XXI</p>
 	</button>
-	<button class="theatre-cgv rounded-3xl outline outline-1 outline-gray-300 mt-2">
-		<p class="text-theatre-cgv py-1 px-3 text-center text-sm text-gray-800 font-bold">CGV</p>
+	<button class="theatre-cgv mt-2 rounded-3xl outline outline-1 outline-gray-300">
+		<p class="text-theatre-cgv py-1 px-3 text-center text-sm font-bold text-gray-800">CGV</p>
 	</button>
-	<button class="theatre-cinepolis rounded-3xl outline outline-1 outline-gray-300 mt-2">
-		<p class="text-theatre-cinepolis py-1 px-3 text-center text-sm text-gray-800 font-bold">
+	<button class="theatre-cinepolis mt-2 rounded-3xl outline outline-1 outline-gray-300">
+		<p class="text-theatre-cinepolis py-1 px-3 text-center text-sm font-bold text-gray-800">
 			Cinépolis
 		</p>
 	</button>
@@ -219,7 +219,7 @@
 
 <!-- Tab Contents -->
 <div class="flex justify-center">
-	<ul id="movie-list" class="carousel-container gap-3 mt-3 mx-5 md:mx-28 p-4 mb-6">
+	<ul id="movie-list" class="carousel-container mx-5 mt-3 mb-6 gap-3 p-4 md:mx-28">
 		{#each movie_data.results as movie}
 			{#if movie.presale_flag != 1}
 				{#if theatre == 'all'}

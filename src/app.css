@@ -18,6 +18,6 @@
 
 @layer components {
 	.carousel-container {
-		@apply flex overflow-x-auto snap-x snap-mandatory;
+		@apply flex snap-x snap-mandatory overflow-x-auto;
 	}
 }

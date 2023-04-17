@@ -29,7 +29,7 @@
 	<Navbar primary_links={pr_links} secondary_links={sec_links} />
 </header>
 <body>
-	<main class="w-full h-full">
+	<main class="h-full w-full">
 		<slot />
 	</main>
 </body>

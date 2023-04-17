@@ -4,10 +4,10 @@
 </script>
 
 <nav class="bg-tix text-gray-200">
-	<div class="xl:max-w-6xl mx-auto px-4">
+	<div class="mx-auto px-4 xl:max-w-6xl">
 		<div class="flex justify-between">
 			<!-- Primary Nav -->
-			<div class="flex space-x-4 z-50">
+			<div class="z-50 flex space-x-4">
 				<!-- Logo -->
 				<a class="flex items-center py-5 px-2 text-gray-200" href="/">
 					<svg
@@ -16,7 +16,7 @@
 						viewBox="0 0 24 24"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="w-6 h-6 mr-2 ml-5"
+						class="mr-2 ml-5 h-6 w-6"
 					>
 						<path
 							stroke-linecap="round"
@@ -26,19 +26,19 @@
 					</svg>
 					<span class="text-large font-bold">Movie Dashboard</span>
 				</a>
-				<div class="hidden md:flex items-center space-x-1">
+				<div class="hidden items-center space-x-1 md:flex">
 					{#each primary_links as link}
 						<a class="px-3 py-2" href={link.href}>{link.text}</a>
 					{/each}
 				</div>
 			</div>
 			<!-- Secondary Nav -->
-			<div class="hidden md:flex items-center space-x-2 mr-8">
+			<div class="mr-8 hidden items-center space-x-2 md:flex">
 				{#each secondary_links as link}
 					{#if link.primary}
 						<a
 							href={link.href}
-							class="px-3 py-2 bg-green-500 text-green-900 font-bold rounded-md hover:bg-green-400 hover:text-green-900"
+							class="rounded-md bg-green-500 px-3 py-2 font-bold text-green-900 hover:bg-green-400 hover:text-green-900"
 							>{link.text}</a
 						>
 					{:else}
@@ -48,15 +48,15 @@
 			</div>
 
 			<!-- Mobile menu button -->
-			<div class="md:hidden flex items-center mr-5">
-				<button class="outline-none mobile-menu-button group">
+			<div class="mr-5 flex items-center md:hidden">
+				<button class="mobile-menu-button group outline-none">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"
 						viewBox="0 0 24 24"
 						stroke-width="1.6"
 						stroke="currentColor"
-						class="w-6 h-6"
+						class="h-6 w-6"
 					>
 						<path
 							stroke-linecap="round"
@@ -66,7 +66,7 @@
 					</svg>
 					<!-- Mobile menu goes here -->
 					<div
-						class="mobile-menu md:hidden absolute z-40 -top-full opacity-0 left-0 pl-5 pb-3 w-screen bg-tix group-focus:top-16 group-focus:opacity-100 transition-all duration-500 ease-in-out"
+						class="mobile-menu absolute -top-full left-0 z-40 w-screen bg-tix pl-5 pb-3 opacity-0 transition-all duration-500 ease-in-out group-focus:top-16 group-focus:opacity-100 md:hidden"
 					>
 						{#each primary_links as link}
 							<a class="block py-3 px-4 text-sm" href={link.href}>{link.text}</a>

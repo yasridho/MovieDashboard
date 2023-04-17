@@ -32,7 +32,7 @@
 <div class="flex justify-center">
 	<ul id="promo-list" class="carousel-container gap-3">
 		{#each promos.results as promo}
-			<li class="shrink-0 snap-center w-fit md:w-1/2">
+			<li class="w-fit shrink-0 snap-center md:w-1/2">
 				<a href={promo.uri}>
 					<img src={promo.image_file} alt={promo.name} />
 				</a>

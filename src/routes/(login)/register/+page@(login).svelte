@@ -1,7 +1,6 @@
 <script>
-// @ts-nocheck
+	// @ts-nocheck
 	export let data;
-	
 </script>
 
 <div

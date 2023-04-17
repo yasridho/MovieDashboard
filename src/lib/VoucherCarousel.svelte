@@ -32,7 +32,7 @@
 </script>
 
 <div class="flex justify-center">
-	<ul id="voucher-list" class="carousel-container gap-3 mt-3 mx-5 md:mx-28 p-4">
+	<ul id="voucher-list" class="carousel-container mx-5 mt-3 gap-3 p-4 md:mx-28">
 		{#each vouchers.results as voucher}
 			<VoucherCard {voucher} />
 		{/each}
